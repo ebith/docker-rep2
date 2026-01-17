@@ -1,5 +1,5 @@
-ARG PHP_VERSION="8.1.24"
-ARG ALPINE_VERSION="3.18"
+ARG PHP_VERSION="8.2"
+ARG ALPINE_VERSION="3.19"
 
 FROM php:${PHP_VERSION}-cli-alpine${ALPINE_VERSION} AS builder
 
@@ -49,7 +49,7 @@ RUN mv 2chproxy.pl /usr/local/bin/
 
 FROM php:${PHP_VERSION}-cli-alpine${ALPINE_VERSION} AS builder2
 
-ARG NOTABUG_PX2C_HASH="0c97e3b5e6"  # v20230713..20231014
+ARG CODEBERG_PX2C_HASH="08fb9fa157"  # Version 20250614
 
 RUN apk --update-cache add \
     curl-dev \
@@ -62,8 +62,8 @@ RUN apk --update-cache add \
     patch
 
 WORKDIR /root
-RUN wget https://notabug.org/NanashiNoGombe/proxy2ch/archive/${NOTABUG_PX2C_HASH}.tar.gz
-RUN tar xzvf ${NOTABUG_PX2C_HASH}.tar.gz
+RUN wget https://codeberg.org/NanashiNoGombe/proxy2ch/archive/${CODEBERG_PX2C_HASH}.tar.gz
+RUN tar xzvf ${CODEBERG_PX2C_HASH}.tar.gz
 
 WORKDIR /root/proxy2ch
 COPY patch /tmp
