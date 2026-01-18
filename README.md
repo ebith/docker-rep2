@@ -1,5 +1,23 @@
 # proxy2chブランチ
 
+## docker-compose.yml
+```yaml
+services:
+  rep2px2c:
+    restart: always
+    image: ebith/rep2:px2c
+    volumes:
+      - $PWD:/ext
+    ports:
+      - '10090:80'
+    environment:
+      PX2C_ACCEPT_CONNECT: 1
+      PX2C_FORCE_HTTPS: 1
+      PX2C_MANAGE_BBSCGI_COOKIES: 1
+      PX2C_BBSCGI_FIX_TIMESTAMP: 1
+      PX2C_BBSCGI_CONFIRMATION: skip
+```
+
 ## 概要
 
 [php8ブランチ](https://github.com/pen/docker-rep2/tree/php8)
