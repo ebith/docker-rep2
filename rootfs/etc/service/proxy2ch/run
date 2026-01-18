@@ -38,10 +38,13 @@ flag --api-override     1   API_OVERRIDE
 flag --direct-dat       1   DIRECT_DAT
 flag --bbsmenu          q   BBSMENU
 flag --chunked          1   CHUNKED
+flag --manage-bbscgi-cookies 1 MANAGE_BBSCGI_COOKIES
 flag --bbscgi-header    q   BBSCGI_HEADER
 flag --bbscgi-header    q   BBSCGI_HEADER2 BBSCGI_HEADER3 BBSCGI_HEADER4 BBSCGI_HEADER5
 flag --bbscgi-header    q   BBSCGI_HEADER6 BBSCGI_HEADER7 BBSCGI_HEADER8 BBSCGI_HEADER9
 flag --bbscgi-postorder q   BBSCGI_POSTORDER
+flag --bbscgi-fix-timestamp 1 BBSCGI_FIX_TIMESTAMP
+flag --bbscgi-confirmation s BBSCGI_CONFIRMATION
 flag --bbscgi-utf8      s   BBSCGI_UTF8
 flag --bbscgi-lua       p   BBSCGI_LUA
 flag --gikofix          1   GIKOFIX
