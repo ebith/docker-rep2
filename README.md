@@ -11,7 +11,7 @@
 ## docker-compose.yml
 ```yaml
 services:
-  rep2px2c:
+  rep2:
     restart: always
     image: ebith/rep2:latest
     volumes:
@@ -24,4 +24,5 @@ services:
       PX2C_MANAGE_BBSCGI_COOKIES: 1
       PX2C_BBSCGI_FIX_TIMESTAMP: 1
       PX2C_BBSCGI_CONFIRMATION: skip
+      PX2C_KEYSTORE: keystore.json
 ```
