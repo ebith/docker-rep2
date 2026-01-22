@@ -13,7 +13,7 @@
 services:
   rep2px2c:
     restart: always
-    image: ebith/rep2:px2c
+    image: ebith/rep2:latest
     volumes:
       - $PWD:/ext
     ports:
