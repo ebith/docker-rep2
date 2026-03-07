@@ -42,7 +42,7 @@ RUN ln -s /ext/rep2/ic rep2/ic
 
 FROM php:${PHP_VERSION}-cli-alpine${ALPINE_VERSION} AS builder2
 
-ARG CODEBERG_PX2C_HASH="08fb9fa157"  # Version 20250614
+ARG CODEBERG_PX2C_HASH="c51b5e16e91bbcb436ea73126042bdd47f7445dc"  # Version 20260306 snapshot
 
 RUN apk --update-cache add \
     curl-dev \

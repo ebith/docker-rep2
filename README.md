@@ -4,7 +4,7 @@
 - PHP 8.5 (JIT有効)
 - Alpine Linux 3.23
 - Composer 2.9 ([composer.json](https://itest.5ch.net/egg/test/read.cgi/software/1740874866/77))
-- [proxy2ch](https://codeberg.org/NanashiNoGombe/proxy2ch) Version 20250614
+- [proxy2ch](https://codeberg.org/NanashiNoGombe/proxy2ch) Version 20260306 snapshot
 - [2chproxy.pl](https://github.com/yama-natuki/2chproxy.pl)の削除
 - Alpine Linux 3.20以降パッケージが無くなったH2Oをビルド
 
