@@ -26,3 +26,11 @@ services:
       PX2C_BBSCGI_CONFIRMATION: skip
       PX2C_KEYSTORE: keystore.json
 ```
+
+## 開発メモ
+### [Multi-platform | Docker Docs](https://docs.docker.com/build/building/multi-platform/)
+```sh
+docker buildx build --platform linux/amd64,linux/arm64 -t rep2 . --load
+docker save rep2:latest -o rep2.tar --platform=linux/arm64
+docker load -i rep2.tar
+```
