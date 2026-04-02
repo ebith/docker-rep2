@@ -12,8 +12,9 @@
 ```yaml
 services:
   rep2:
-    restart: always
     image: ebith/rep2:latest
+    container_name: rep2
+    restart: unless-stopped
     volumes:
       - $PWD:/ext
     ports:
